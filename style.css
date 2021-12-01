@@ -72,8 +72,8 @@ header {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 80px 20%;
+    grid-template-columns:1fr 1fr;
+    margin: 80px 15%;
 
 }
 
@@ -88,13 +88,13 @@ header {
 
 .me {
     display: grid;
-    grid-template-columns: auto;
-    margin: 200px 20% 600px 20%;
+    grid-template-columns: 1fr;
+    margin: 200px 15% 600px 15%;
 }
 
 .my-name {
     color: var(--primary);
-    font-size: 6rem;
+    font-size: 5rem;
     margin:0;
     text-transform: uppercase;
 }
@@ -120,4 +120,11 @@ header {
 #main-image {
     width: 400px;
     border: 1px solid var(--secondary);
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
