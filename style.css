@@ -13,6 +13,7 @@ body{
     font-family: Lato, sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
+    margin: 0;
 }
 
 header {
@@ -118,6 +119,24 @@ header {
 
 .contact-button:hover {
     color: var(--secondary);
+}
+
+.footer-container {
+    display: flex;
+    background-color: #0f0f0f;
+    margin:0;
+    padding: 50px 5%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-end;
+
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container ul li {
+    display: inline-block;
 }
 #main-image {
     width: 400px;
