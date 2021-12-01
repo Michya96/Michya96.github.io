@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600;700;800&display=swap');
 :root {
     --background: #212121;
     --primary: rgb(0, 119, 103);
-    --secondary: rgb(0, 226, 196);
+    --secondary: rgb(4, 182, 158);
 }
 
 body{
     background: var(--background);
     color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 header {
@@ -14,14 +18,21 @@ header {
     display: flex;
     justify-content: flex-end;
     align-content: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
 }
 
 .title {
-    color: var(--primary)
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: var(--primary);
 }
 
 .subtitle {
-    color: var(--secondary)
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: var(--secondary);
+    font-size: 2rem;
 }
 
 .menu ul {
@@ -46,7 +57,7 @@ header {
 .menu ul li a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     transition: all 300ms ease 0s;
 }
@@ -57,4 +68,56 @@ header {
 .menu ul li{
     display: inline-block;
     margin: 10px 10px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 80px 20%;
+
+}
+
+.main-card {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.about-text {
+    margin-right: 80px;
+}
+
+.me {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 200px 20% 600px 20%;
+}
+
+.my-name {
+    color: var(--primary);
+    font-size: 6rem;
+    margin:0;
+    text-transform: uppercase;
+}
+
+.contact-button {
+    width: 200px;
+    height: 80px;
+    /* justify-self: center; */
+    background-color: var(--background);
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid var(--secondary);
+    transition: color 300ms ease 0s;
+    margin-top: 50px;
+}
+
+.contact-button:hover {
+    color: var(--secondary);
+}
+#main-image {
+    width: 400px;
+    border: 1px solid var(--secondary);
 }
