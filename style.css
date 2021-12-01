@@ -3,6 +3,8 @@
     --background: #212121;
     --primary: rgb(0, 119, 103);
     --secondary: rgb(4, 182, 158);
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
 }
 
 body{
