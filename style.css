@@ -138,6 +138,34 @@ header {
 .footer-container ul li {
     display: inline-block;
 }
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 20% 600px 20%;
+    gap: 6em;
+    justify-content:space-evenly;
+
+}
+.card {
+    border: 2px solid var(--secondary);
+    text-align: left;
+    width: 300px;
+}
+
+.card h2 {
+    color: var(--secondary);
+    text-align: center;
+}
+
+.skills-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin: 600px 15% 0px 15%;
+    color: var(--secondary);
+    font-size: 2rem;
+}
 #main-image {
     width: 400px;
     border: 1px solid var(--secondary);
