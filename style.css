@@ -126,5 +126,14 @@ header {
     .main-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        margin: 80px 5%;
+    }
+
+    .me {
+        margin: 200px 5% 600px 5%;
+    }
+
+    .my-name {
+        font-size: 4rem;
     }
 }
