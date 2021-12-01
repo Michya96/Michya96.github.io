@@ -2,7 +2,7 @@
 :root {
     --background: #212121;
     --primary: rgb(0, 119, 103);
-    --secondary: rgb(4, 182, 158);
+    --secondary: rgb(5, 235, 204);
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
 }
@@ -92,14 +92,12 @@ header {
 .me {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 200px 15% 600px 15%;
+    margin: 200px 15% 200px 15%;
 }
 
 .my-name {
-    color: var(--primary);
-    font-size: 5rem;
+    font-size: 3rem;
     margin:0;
-    text-transform: uppercase;
 }
 
 .contact-button {
@@ -107,18 +105,19 @@ header {
     height: 80px;
     /* justify-self: center; */
     background-color: var(--background);
-    color: white;
+    color: var(--secondary);
+    text-transform: uppercase;
     font-family: montserrat, sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
     border: 2px solid var(--secondary);
-    transition: color 300ms ease 0s;
+    transition: transform 300ms ease 0s;
     margin-top: 50px;
 }
 
 .contact-button:hover {
-    color: var(--secondary);
+    transform: scale(1.1);
 }
 
 .footer-container {
@@ -142,16 +141,18 @@ header {
 .experience-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 30px 20% 600px 20%;
+    margin: 30px 20% 200px 20%;
     gap: 6em;
-    justify-content:space-evenly;
+    justify-content:space-around;
 
 }
 .card {
     border: 2px solid var(--secondary);
     text-align: left;
     width: 300px;
+    justify-self: end;
 }
+
 
 .card h2 {
     color: var(--secondary);
@@ -162,13 +163,18 @@ header {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     text-align: left;
-    margin: 600px 15% 0px 15%;
+    margin: 200px 15% 0px 15%;
     color: var(--secondary);
     font-size: 2rem;
 }
 #main-image {
     width: 400px;
     border: 1px solid var(--secondary);
+    justify-self: end;
+}
+
+#first-card {
+    justify-self: start;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -184,5 +190,17 @@ header {
 
     .my-name {
         font-size: 4rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 80px 5%;
+    }
+    .card {
+        justify-self: center;
+    }
+    #first-card {
+        justify-self: center;
     }
 }
