@@ -1,0 +1,17 @@
+:root {
+    --background: #212121;
+    --primary: rgb(0, 119, 103);
+    --secondary: rgb(0, 226, 196);
+}
+
+body{
+    background: var(--background)
+}
+
+.title {
+    color: var(--primary)
+}
+
+.subtitle {
+    color: var(--secondary)
+}
